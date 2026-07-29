@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#f3ecd9"/>
+  <path d="M11 12h42v40H11z" fill="#d85f32" stroke="#18231f" stroke-width="4"/>
+  <path d="M24 19h16M21 29h22M17 40h30" stroke="#fffaf0" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="47" cy="47" r="10" fill="#173d32" stroke="#18231f" stroke-width="3"/>
+  <text x="47" y="52" fill="white" font-size="14" text-anchor="middle" font-family="serif" font-weight="bold">札</text>
+</svg>
+

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /m/
+Disallow: /p/
+Disallow: /t/
+
+Sitemap: https://round-fuda.yhay81.com/sitemap.xml
+
