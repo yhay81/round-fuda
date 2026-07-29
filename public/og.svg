@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <pattern id="grain" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M0 20h40M20 0v40" stroke="#ffffff" stroke-opacity=".025"/>
+    </pattern>
+    <filter id="shadow"><feDropShadow dx="12" dy="14" stdDeviation="2" flood-opacity=".35"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="#f3ecd9"/>
+  <path d="M0 0h1200v630H0z" fill="url(#grain)"/>
+  <rect x="70" y="62" width="1060" height="506" rx="28" fill="#0e3027" stroke="#173d32" stroke-width="8"/>
+  <g transform="translate(112 104)">
+    <rect width="58" height="58" fill="#d85f32" stroke="#18231f" stroke-width="5"/>
+    <text x="29" y="42" text-anchor="middle" fill="white" font-family="serif" font-size="34" font-weight="bold">札</text>
+    <text x="78" y="38" fill="#fffaf0" font-family="sans-serif" font-size="28" font-weight="bold" letter-spacing="3">ラウンド札</text>
+  </g>
+  <g transform="translate(112 226)">
+    <text fill="#f2c75c" font-family="sans-serif" font-size="16" font-weight="bold" letter-spacing="5">PAIR · PLAY · CONFIRM</text>
+    <text y="64" fill="#ffffff" font-family="sans-serif" font-size="44" font-weight="bold">大会の卓を、迷わせない。</text>
+    <text y="112" fill="#cfddd7" font-family="sans-serif" font-size="21">受付・スイスドロー・双方の結果確認・順位</text>
+  </g>
+  <g transform="translate(710 145) rotate(2)" filter="url(#shadow)">
+    <rect width="350" height="340" fill="#fffaf0" stroke="#d3c6a7" stroke-width="7"/>
+    <path d="M25 60h300" stroke="#18231f" stroke-width="3"/>
+    <text x="25" y="42" fill="#18231f" font-family="sans-serif" font-size="15" font-weight="bold">ROUND 3</text>
+    <g transform="translate(25 82)">
+      <rect width="300" height="66" fill="white" stroke="#d3c6a7"/>
+      <circle cx="30" cy="33" r="20" fill="#173d32"/>
+      <text x="30" y="40" fill="white" text-anchor="middle" font-family="serif" font-size="20">1</text>
+      <text x="67" y="40" fill="#18231f" font-family="sans-serif" font-size="17" font-weight="bold">こはく　対　NORTH</text>
+    </g>
+    <g transform="translate(25 160)">
+      <rect width="300" height="66" fill="white" stroke="#d3c6a7"/>
+      <circle cx="30" cy="33" r="20" fill="#173d32"/>
+      <text x="30" y="40" fill="white" text-anchor="middle" font-family="serif" font-size="20">2</text>
+      <text x="67" y="40" fill="#18231f" font-family="sans-serif" font-size="17" font-weight="bold">ミナト　対　すず</text>
+    </g>
+    <g transform="translate(25 238)">
+      <rect width="300" height="66" fill="white" stroke="#d3c6a7"/>
+      <circle cx="30" cy="33" r="20" fill="#173d32"/>
+      <text x="30" y="40" fill="white" text-anchor="middle" font-family="serif" font-size="20">3</text>
+      <text x="67" y="40" fill="#18231f" font-family="sans-serif" font-size="17" font-weight="bold">AO　対　カナメ</text>
+    </g>
+  </g>
+</svg>
+
