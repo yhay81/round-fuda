@@ -25,8 +25,12 @@ describe("Swiss pairing", () => {
     expect(
       pairings.some(
         (pairing) =>
-          [pairing.player1Id, pairing.player2Id].sort().join("") === "AB" ||
-          [pairing.player1Id, pairing.player2Id].sort().join("") === "CD",
+          [pairing.player1Id, pairing.player2Id]
+            .sort((left, right) => String(left).localeCompare(String(right)))
+            .join("") === "AB" ||
+          [pairing.player1Id, pairing.player2Id]
+            .sort((left, right) => String(left).localeCompare(String(right)))
+            .join("") === "CD",
       ),
     ).toBe(false);
   });

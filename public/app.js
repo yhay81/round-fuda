@@ -53,7 +53,13 @@ form?.addEventListener("submit", async (event) => {
   submit.disabled = true;
   errorBox.textContent = "";
   const data = new FormData(form);
-  const startsAt = Math.floor(new Date(String(data.get("startsAt"))).getTime() / 1000);
+  const rawStartsAt = data.get("startsAt");
+  if (typeof rawStartsAt !== "string") {
+    errorBox.textContent = "開始日時を確認してください。";
+    submit.disabled = false;
+    return;
+  }
+  const startsAt = Math.floor(new Date(rawStartsAt).getTime() / 1000);
   try {
     const response = await fetch("/api/tournaments", {
       body: JSON.stringify({
@@ -85,4 +91,4 @@ form?.addEventListener("submit", async (event) => {
   }
 });
 
-sendEvent("visited");
+void sendEvent("visited");

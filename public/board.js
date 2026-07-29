@@ -392,7 +392,9 @@ const reportResult = (matchId, result) =>
 const resolve = (matchId, result) =>
   perform(`/api/tournaments/${tournamentId}/matches/${matchId}/resolve`, { result });
 const drop = () => {
-  if (confirm("この開催を棄権しますか？")) perform(`/api/tournaments/${tournamentId}/drop`);
+  if (confirm("この開催を棄権しますか？")) {
+    void perform(`/api/tournaments/${tournamentId}/drop`);
+  }
 };
 
 const downloadSnapshot = async (format) => {
@@ -430,6 +432,6 @@ document.querySelectorAll("[data-tab]").forEach((tab) => {
 if ((page === "manage" || page === "pass") && !key) {
   showAlert("この札には鍵がありません。最初に保存したURLから開いてください。");
 } else {
-  load();
-  setInterval(() => load(true), 15000);
+  void load();
+  setInterval(() => void load(true), 15000);
 }
